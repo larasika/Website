@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    position: relative;
+    /*border: 1.5px black dotted;*/
+}
+
+body{
+    background-color: lightgrey;
+    background-image: url(images/CSSimages/AMtransparentlogo.png);    
+}
+
+html, body{
+    font-size: 1em;
+}
+
+header {
+    text-align: center;
+}
+
+header h1{
+    font-size: 2rem;
+    font-family: monospace ;
+    font-style: oblique;
+    background-color: azure;
+    color: brown;
+    width: 100%;
+}
+
+header h2{
+    font-family: "Courier New", monospace;
+    border-width: thick;
+    border: 1px black dotted;
+    background-color: gainsboro;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+header img:last-child{
+    width: 355px;
+}
+
+
+/*nav{
+    border: 1.7px blue dotted;
+}*/
+
+
+nav ul{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+nav > ul > li {
+    /*border: 1px black dotted;*/
+    padding: 3%;
+    margin : 0;
+    background-color: darkslategrey;
+    font-size: 1.2rem;
+}
+
+
+nav > ul > li:hover{
+    background-color: darkolivegreen;
+}
+
+
+nav > ul > li > a{
+    color: aqua;
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+}
+
+section p{
+    width: 100%;
+    background-color: darkseagreen;
+    text-align: justify;
+}
+
+section h2{
+    border: 3px grey solid;
+    background-color: darkslategrey;
+}
+
+section h3{
+    text-align: center;
+    font-style: italic;
+    background-color: darkslategrey;
+}
+
+section img{
+    width: 100%;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: darkslategrey;
+    margin-bottom: 90%;
+} 
+
+
+/*for tablet and other bigger(with size between mobile phone and desktop) mobile device*/
+@media screen and (max-width: 1199px) and (min-width: 480px){
+  
+    div img{
+        width: 480px;
+    }
+    
+    article > p{
+        padding: 4% 7% 4%;
+        font-size: 17px;
+        text-align: center;
+        text-align: justify;
+    }
+}
+
+
+
+/*for desktop*/
+@media screen and (min-width: 1200px){
+
+   
+
+    /*header {
+        text-align: center;
+    }*/
+    
+    
+    header img:last-child{
+        width: 35%;
+    }
+
+    header h1{
+        font-size: 2.3rem;
+    }
+    
+    /*header img:last-child{
+        width: 35%;
+    }*/
+
+    /*header{
+        background-image: url(images/CSSimages/AM%20black%20logo.jpg);
+        background-repeat: repeat-x;
+    }*/
+
+    nav > ul {
+        /*text-align: center;*/ /*already declared above*/
+        position: static;
+        /*margin: 0;*/
+    }
+
+    nav  ul  li {
+        display: inline-block;
+        /*border: 1px black dotted;*/
+        padding: 1%;
+        font-size: 1rem;
+        width: 14%; 
+    }
+
+
+    /**/
+    
+   /** article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+    
+    article > p{
+        padding: 4% 7% 4%;
+        font-size: 17px;
+        text-align: center;
+        text-align: justify;
+    }
+    
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div img{
+        width: 500px;
+    }
+    
+    /*section img[src="images/b2.jpg"]{
+        float: left;
+        width: 500px;
+    }*/
+
+    /*section img:last-child{
+        float:right;
+        width: 500px;
+    }*/
+
+    footer{
+        background-color: darkslategrey;
+        margin-bottom: 0;
+        clear: both;
+    }    
+    
+   
+
+}
